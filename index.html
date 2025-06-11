@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesoura de Prata - Premium Barbershop</title>
+    <meta name="description" content="Experience the art of grooming at Tesoura de Prata, where tradition meets modern style. Professional barbershop services including haircuts, beard trims, and hot towel shaves.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i data-lucide="scissors" class="nav-icon"></i>
+                <h1 class="nav-title">Tesoura de Prata</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#environment" class="nav-link">Gallery</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#booking" class="nav-button">Book Now</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span class="hamburger">☰</span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#services" class="mobile-link" onclick="closeMobileMenu()">Services</a>
+                <a href="#environment" class="mobile-link" onclick="closeMobileMenu()">Gallery</a>
+                <a href="#about" class="mobile-link" onclick="closeMobileMenu()">About</a>
+                <a href="#contact" class="mobile-link" onclick="closeMobileMenu()">Contact</a>
+                <a href="#booking" class="mobile-button" onclick="closeMobileMenu()">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Crafting Excellence, <br>
+                <span class="hero-accent">One Cut at a Time</span>
+            </h1>
+            <p class="hero-description">
+                Experience the art of grooming at Tesoura de Prata, where tradition meets modern style.
+            </p>
+            <a href="#booking" class="hero-button">Book Now</a>
+        </div>
+        <div class="hero-arrow">
+            <i data-lucide="chevron-down" class="arrow-icon"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">About Us</h2>
+                    <div class="about-content">
+                        <p>
+                            Founded on the principles of exceptional craftsmanship and unparalleled service, Tesoura de Prata represents the pinnacle of masculine grooming excellence. Our story began with a simple vision: to create a sanctuary where modern gentlemen could experience the timeless art of traditional barbering.
+                        </p>
+                        <p>
+                            Every cut, every shave, every detail is executed with precision and passion. We believe that grooming is not just about appearance—it's about confidence, self-expression, and the ritual of self-care that every distinguished man deserves.
+                        </p>
+                        <p class="about-quote">
+                            "Excellence is not a skill, it's an attitude we bring to every client, every day."
+                        </p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Elite barbershop interior" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">
+                    Each service is meticulously crafted to deliver an experience that exceeds expectations, combining traditional techniques with modern precision.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i data-lucide="scissors" class="service-icon"></i>
+                    <h3 class="service-title">Haircut</h3>
+                    <p class="service-description">Precision cuts tailored to your individual style.</p>
+                    <div class="service-price">From $45</div>
+                </div>
+                
+                <div class="service-card">
+                    <i data-lucide="user" class="service-icon"></i>
+                    <h3 class="service-title">Beard Trim</h3>
+                    <p class="service-description">Sculpting and shaping for a refined look.</p>
+                    <div class="service-price">From $35</div>
+                </div>
+                
+                <div class="service-card">
+                    <i data-lucide="waves" class="service-icon"></i>
+                    <h3 class="service-title">Hot Towel Shave</h3>
+                    <p class="service-description">A classic shave for ultimate smoothness.</p>
+                    <div class="service-price">From $40</div>
+                </div>
+                
+                <div class="service-card">
+                    <i data-lucide="eye" class="service-icon"></i>
+                    <h3 class="service-title">Coloring</h3>
+                    <p class="service-description">Enhance your look with expert coloring.</p>
+                    <div class="service-price">From $25</div>
+                </div>
+                
+                <div class="service-card">
+                    <i data-lucide="sparkles" class="service-icon"></i>
+                    <h3 class="service-title">Facial Treatment</h3>
+                    <p class="service-description">Rejuvenate your skin with our facial treatments.</p>
+                    <div class="service-price">From $60</div>
+                </div>
+                
+                <div class="service-card">
+                    <i data-lucide="crown" class="service-icon"></i>
+                    <h3 class="service-title">Elite Package</h3>
+                    <p class="service-description">The complete experience with all services.</p>
+                    <div class="service-price">From $120</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environment Section -->
+    <section id="environment" class="environment">
+        <div class="container">
+            <div class="environment-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-description">
+                    Step into a world of sophistication where every detail has been carefully curated to provide the ultimate gentleman's experience.
+                </p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Luxurious barbershop interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Professional barber station">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562004760-aceed7bb0fe3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Elegant waiting area">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Traditional barber tools">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Vintage barbershop atmosphere">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Modern barbershop interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="team-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-description">
+                    Meet our team of elite barbers, each a master of their craft with years of experience and an unwavering commitment to excellence.
+                </p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" alt="Ethan Carter">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ethan Carter</h3>
+                        <p class="team-title">Master Barber & Owner</p>
+                        <p class="team-testimonial">"The best barbershop experience I've ever had. The attention to detail is unmatched."</p>
+                        <div class="team-socials">
+                            <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" alt="Liam Harper">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Liam Harper</h3>
+                        <p class="team-title">Senior Barber</p>
+                        <p class="team-testimonial">"Tesoura de Prata is my go-to for a sharp look. The barbers are true artists."</p>
+                        <div class="team-socials">
+                            <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" alt="Noah Bennett">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Noah Bennett</h3>
+                        <p class="team-title">Styling Specialist</p>
+                        <p class="team-testimonial">"I always leave feeling refreshed and confident. Highly recommend!"</p>
+                        <div class="team-socials">
+                            <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Premium Products</h2>
+                <p class="section-description">
+                    Discover our curated selection of premium grooming products, chosen for their exceptional quality and performance.
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1570554886111-e80fcca6a029?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Hair Styling Collection">
+                    <div class="product-info">
+                        <h3 class="product-title">Hair Styling Collection</h3>
+                        <p class="product-description">Professional-grade pomades, waxes, and styling products used by our master barbers.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1570554886111-e80fcca6a029?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Beard Care Essentials">
+                    <div class="product-info">
+                        <h3 class="product-title">Beard Care Essentials</h3>
+                        <p class="product-description">Premium oils, balms, and treatments to maintain a perfectly groomed beard.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Shaving Essentials">
+                    <div class="product-info">
+                        <h3 class="product-title">Shaving Essentials</h3>
+                        <p class="product-description">Traditional shaving creams, aftershaves, and accessories for the perfect shave.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-header">
+                <h2 class="section-title">Book Your Experience</h2>
+                <p class="section-description">
+                    Reserve your appointment with our master barbers and experience the pinnacle of grooming excellence.
+                </p>
+            </div>
+            
+            <div class="booking-form-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Select Service</label>
+                            <select name="service" class="form-select" required>
+                                <option value="">Choose a service</option>
+                                <option value="haircut">Precision Haircut - $45</option>
+                                <option value="beard">Beard Trim & Shape - $35</option>
+                                <option value="shave">Hot Towel Shave - $40</option>
+                                <option value="package">Elite Package - $120</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Choose Barber</label>
+                            <select name="barber" class="form-select" required>
+                                <option value="">Choose a barber</option>
+                                <option value="ethan">Ethan Carter</option>
+                                <option value="liam">Liam Harper</option>
+                                <option value="noah">Noah Bennett</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Preferred Date</label>
+                            <input type="date" name="date" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Preferred Time</label>
+                            <select name="time" class="form-select" required>
+                                <option value="">Choose a time</option>
+                                <option value="9:00">9:00 AM</option>
+                                <option value="10:30">10:30 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:30">2:30 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" name="phone" placeholder="Your phone number" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Special Requests (Optional)</label>
+                        <textarea name="notes" placeholder="Any specific requirements or preferences..." class="form-textarea" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="submit-button">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">
+                    We're here to answer your questions and help you schedule the perfect grooming experience.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="contact-form-wrapper">
+                        <h3 class="contact-form-title">Send us a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" name="firstName" placeholder="John" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" name="lastName" placeholder="Doe" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" name="email" placeholder="john@example.com" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Subject</label>
+                                <input type="text" name="subject" placeholder="How can we help you?" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea name="message" placeholder="Tell us more about your inquiry..." class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="contact-submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-info-wrapper">
+                        <h3 class="contact-info-title">Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                                <div>
+                                    <h4 class="contact-label">Address</h4>
+                                    <p class="contact-text">123 Elite Street<br>Downtown District<br>Metropolitan City, MC 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                                <div>
+                                    <h4 class="contact-label">Phone</h4>
+                                    <p class="contact-text">(555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                                <div>
+                                    <h4 class="contact-label">Email</h4>
+                                    <p class="contact-text">info@tesouradeprata.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i data-lucide="clock" class="contact-icon"></i>
+                                <div>
+                                    <h4 class="contact-label">Hours</h4>
+                                    <div class="contact-text">
+                                        <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+                                        <p>Saturday: 8:00 AM - 7:00 PM</p>
+                                        <p>Sunday: 10:00 AM - 6:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map placeholder -->
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <i data-lucide="map-pin" class="map-icon"></i>
+                            <p class="map-text">Interactive Map</p>
+                            <p class="map-subtext">Google Maps Integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i data-lucide="scissors" class="footer-icon"></i>
+                        <h3 class="footer-title">Tesoura de Prata</h3>
+                    </div>
+                    <p class="footer-description">
+                        Where tradition meets modern style in an atmosphere of refined masculinity. Experience the art of grooming at its finest.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#services" class="footer-link">Services</a></li>
+                        <li><a href="#team" class="footer-link">Our Team</a></li>
+                        <li><a href="#booking" class="footer-link">Book Now</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-list">
+                        <li><span class="footer-service">Precision Haircuts</span></li>
+                        <li><span class="footer-service">Beard Trimming</span></li>
+                        <li><span class="footer-service">Hot Towel Shaves</span></li>
+                        <li><span class="footer-service">Facial Treatments</span></li>
+                        <li><span class="footer-service">Styling Consultation</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Connect With Us</h4>
+                    <div class="footer-socials">
+                        <a href="#" class="social-button"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-button"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-button"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-button"><i data-lucide="linkedin"></i></a>
+                    </div>
+                    <p class="footer-contact-info">
+                        <i data-lucide="phone" class="contact-info-icon"></i>
+                        (555) 123-4567
+                    </p>
+                    <p class="footer-contact-info">
+                        <i data-lucide="mail" class="contact-info-icon"></i>
+                        info@tesouradeprata.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Tesoura de Prata. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
